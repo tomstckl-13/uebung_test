@@ -1,0 +1,30 @@
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\Person;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+
+class PersonSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    public function run(): void
+    {
+        Person::create([
+            'name' => 'John',
+            'age' => 18,
+            'schwarz' => true
+        ]);
+
+
+        Person::create([
+            'name' => 'Jane',
+            'age' => 60,
+            'schwarz' => false
+        ]);
+
+    }
+}
